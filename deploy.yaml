@@ -16,6 +16,8 @@
 
     - name: Create a suitable set of firewall rules
       ec2_group:
+         aws_access_key: AKIAIWU442QMLNIH76JQ
+         aws_secret_key: 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
          name: jenkins_server_security_groups
          description: Specific rules for a Jenkins Instance
          region: "{{ region }}"
